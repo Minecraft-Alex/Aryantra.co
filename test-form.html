@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4a5af8;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #3949e0;
+        }
+        .response {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contact Form Test</h1>
+    <form id="contactForm">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="response" class="response" style="display: none;">
+        <h3>Response:</h3>
+        <pre id="responseData"></pre>
+    </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                message: document.getElementById('message').value
+            };
+            
+            document.getElementById('response').style.display = 'none';
+            document.getElementById('responseData').textContent = '';
+            
+            try {
+                const response = await fetch('http://localhost:3001/api/contact', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(formData)
+                });
+                
+                const responseText = await response.text();
+                let responseData;
+                
+                try {
+                    responseData = JSON.parse(responseText);
+                    document.getElementById('responseData').textContent = JSON.stringify(responseData, null, 2);
+                } catch (e) {
+                    document.getElementById('responseData').textContent = responseText;
+                }
+                
+                document.getElementById('response').style.display = 'block';
+                
+                if (response.ok) {
+                    alert('Form submitted successfully!');
+                    document.getElementById('contactForm').reset();
+                } else {
+                    alert('Error submitting form. Please check the response for details.');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                document.getElementById('responseData').textContent = 'Error: ' + error.message;
+                document.getElementById('response').style.display = 'block';
+                alert('Error submitting form. Check console for details.');
+            }
+        });
+    </script>
+</body>
+</html> 
