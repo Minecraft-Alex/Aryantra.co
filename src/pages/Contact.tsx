@@ -7,7 +7,7 @@ import FloatingElements from '../components/FloatingElements';
 import { Helmet } from 'react-helmet-async';
 import { useLocation } from 'react-router-dom';
 
-const GOOGLE_SCRIPT_URL = "http://localhost:3001/api/contact";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxkZkwQOlMD0lYmTvcvpTsAtq72EbWejS6vNr2oVRtKynJbGLxmLOuvVwQU_xVsrJof/exec";
 
 const Contact = () => {
   const { scrollYProgress } = useScroll();
@@ -58,6 +58,7 @@ const Contact = () => {
       console.log('Submitting form data:', formData);
       const response = await fetch(GOOGLE_SCRIPT_URL, {
         method: "POST",
+        mode: "no-cors",
         headers: {
           "Content-Type": "application/json"
         },
@@ -65,20 +66,14 @@ const Contact = () => {
       });
       
       console.log('Response status:', response.status);
-      if (response.ok) {
-        const responseText = await response.text();
-        console.log('Response text:', responseText);
-        
-        try {
-          const data = JSON.parse(responseText);
-          console.log('Response data (JSON):', data);
-        } catch (e) {
-          console.log('Response is not JSON, using as text');
-        }
-        
+      // With no-cors mode, we can't check response.ok
+      // We'll assume success if we got a response at all
+      try {
+        // Note: with no-cors mode, we can't actually read the response
         success = true;
-      } else {
-        console.error('Error response:', await response.text());
+      } catch (e) {
+        console.log('Error parsing response', e);
+        success = false;
       }
     } catch (err) {
       console.error('Submission error:', err);
