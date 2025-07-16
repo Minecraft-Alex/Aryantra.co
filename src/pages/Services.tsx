@@ -130,20 +130,87 @@ const Services = () => {
   return (
     <>
       <Helmet>
-        <title>AI Services by Aryantra - Voice, Chatbots, Content Automation</title>
-        <meta name="description" content="Explore Aryantra's comprehensive AI services: voice agents, chatbots, content automation, and more. Scalable, enterprise-grade AI for business growth." />
-        <meta name="keywords" content="AI Services, Chatbots, Voice Agents, Content Automation, Aryantra, Business Automation" />
+        <title>AI Automation Services | Voice Agents, Chatbots, Content Automation | Aryantra</title>
+        <meta name="description" content="Transform your business with Aryantra's AI services: AI voice agents, lead qualification, chatbots, content automation, and AI-generated media. Scalable, enterprise-grade solutions." />
+        <meta name="keywords" content="AI voice agents, AryantraAI services, Aryantra automation, business AI solutions, lead qualification AI, AI chatbots, content automation, AI-generated media, enterprise AI solutions, Aryantra, voice automation technology, 24/7 AI customer service, multi-language chatbots, automated lead scoring, AI sales automation, Aryantra.co, AI business automation, AI content creation, voice AI for business, AI customer support, virtual AI assistants, AI voice support systems, enterprise automation software, B2B AI solutions, AI-driven business growth" />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="AI Services by Aryantra - Voice, Chatbots, Content Automation" />
-        <meta property="og:description" content="Explore Aryantra's comprehensive AI services: voice agents, chatbots, content automation, and more. Scalable, enterprise-grade AI for business growth." />
+        <meta property="og:title" content="AI Automation Services | Voice Agents, Chatbots, Content Automation | Aryantra" />
+        <meta property="og:description" content="Transform your business with Aryantra's AI services: AI voice agents, lead qualification, chatbots, content automation, and AI-generated media." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://aryantra.com/services" />
-        <meta property="og:image" content="/vite.svg" />
+        <meta property="og:url" content="https://aryantra.co/services" />
+        <meta property="og:image" content="/logo/ARYANTRA.svg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="AI Services by Aryantra - Voice, Chatbots, Content Automation" />
-        <meta name="twitter:description" content="Explore Aryantra's comprehensive AI services: voice agents, chatbots, content automation, and more. Scalable, enterprise-grade AI for business growth." />
-        <meta name="twitter:image" content="/vite.svg" />
-        <link rel="canonical" href="https://aryantra.com/services" />
+        <meta name="twitter:title" content="AI Automation Services | Voice Agents, Chatbots, Content Automation | Aryantra" />
+        <meta name="twitter:description" content="Transform your business with Aryantra's AI services: voice agents, lead qualification, chatbots, content automation, and AI-generated media." />
+        <meta name="twitter:image" content="/logo/ARYANTRA.svg" />
+        <link rel="canonical" href="https://aryantra.co/services" />
+
+        {/* Structured data for services page */}
+        <script type="application/ld+json">
+        {`
+          {
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "itemListElement": [
+              {
+                "@type": "Service",
+                "position": 1,
+                "name": "AI Voice Agent",
+                "description": "Intelligent, always-on voice support that handles customer service, outbound sales, and appointment scheduling.",
+                "provider": {
+                  "@type": "Organization",
+                  "name": "Aryantra"
+                },
+                "url": "https://aryantra.co/services#ai-voice-agent"
+              },
+              {
+                "@type": "Service",
+                "position": 2,
+                "name": "AI Lead Qualification & Nurturing",
+                "description": "Automatically qualify leads, score intent, and drive engagement with AI-powered communication flows.",
+                "provider": {
+                  "@type": "Organization",
+                  "name": "Aryantra"
+                },
+                "url": "https://aryantra.co/services#ai-lead-qualification-and-nurturing"
+              },
+              {
+                "@type": "Service",
+                "position": 3,
+                "name": "AI-Generated Image & Video Assets",
+                "description": "Create on-brand, high-conversion visual content in minutes using generative AI models.",
+                "provider": {
+                  "@type": "Organization",
+                  "name": "Aryantra"
+                },
+                "url": "https://aryantra.co/services#ai-generated-image-and-video-assets"
+              },
+              {
+                "@type": "Service",
+                "position": 4,
+                "name": "AI Chatbots",
+                "description": "Deploy multi-lingual, context-aware chatbots that resolve queries, upsell, and delight customers 24/7.",
+                "provider": {
+                  "@type": "Organization",
+                  "name": "Aryantra"
+                },
+                "url": "https://aryantra.co/services#ai-chatbots"
+              },
+              {
+                "@type": "Service",
+                "position": 5,
+                "name": "Content Automation",
+                "description": "From blog articles to product descriptions—automate your content lifecycle at scale.",
+                "provider": {
+                  "@type": "Organization",
+                  "name": "Aryantra"
+                },
+                "url": "https://aryantra.co/services#content-automation"
+              }
+            ]
+          }
+        `}
+        </script>
       </Helmet>
       <motion.div
         initial={{ opacity: 0 }}

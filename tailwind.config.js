@@ -4,8 +4,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'sans': ['Inter', 'Space Grotesk', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
-        'display': ['Space Grotesk', 'Inter', 'system-ui', 'sans-serif'],
+        'sans': ['"IBM Plex Mono"', 'monospace'],
+        'display': ['"IBM Plex Mono"', 'monospace'],
+        'mono': ['"IBM Plex Mono"', 'monospace'],
       },
       colors: {
         primary: {

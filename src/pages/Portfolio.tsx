@@ -74,18 +74,18 @@ const Portfolio = () => {
       <Helmet>
         <title>Portfolio - Aryantra AI Projects & Case Studies</title>
         <meta name="description" content="Explore Aryantra's portfolio of AI automation projects, case studies, and business transformations across industries." />
-        <meta name="keywords" content="AI Portfolio, Case Studies, Projects, Aryantra, Automation, Business Transformation" />
+        <meta name="keywords" content="AI Portfolio, Aryantra projects, AI case studies, AryantraAI implementations, automation success stories, business transformation examples, AI voice agent projects, chatbot case studies, AI content automation examples, Aryantra customer success, AI ROI case studies, B2B AI implementation, Aryantra.co portfolio, generative AI projects, sales automation examples, AI for business examples, customer support AI case studies, AI media generation portfolio, Aryantra solutions showcase, AI business use cases" />
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content="Portfolio - Aryantra AI Projects & Case Studies" />
         <meta property="og:description" content="Explore Aryantra's portfolio of AI automation projects, case studies, and business transformations across industries." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://aryantra.com/portfolio" />
-        <meta property="og:image" content="/vite.svg" />
+        <meta property="og:url" content="https://aryantra.co/portfolio" />
+        <meta property="og:image" content="/logo/ARYANTRA.svg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Portfolio - Aryantra AI Projects & Case Studies" />
         <meta name="twitter:description" content="Explore Aryantra's portfolio of AI automation projects, case studies, and business transformations across industries." />
-        <meta name="twitter:image" content="/vite.svg" />
-        <link rel="canonical" href="https://aryantra.com/portfolio" />
+        <meta name="twitter:image" content="/logo/ARYANTRA.svg" />
+        <link rel="canonical" href="https://aryantra.co/portfolio" />
       </Helmet>
       <motion.div
         initial={{ opacity: 0 }}

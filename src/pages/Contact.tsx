@@ -133,18 +133,18 @@ const Contact = () => {
       <Helmet>
         <title>Contact Aryantra - AI Automation Consultation</title>
         <meta name="description" content="Contact Aryantra for AI automation solutions, business consultation, and support. Let's automate your pain into profit." />
-        <meta name="keywords" content="Contact Aryantra, AI Consultation, Business Automation, Support, Inquiry" />
+        <meta name="keywords" content="Contact Aryantra, AryantraAI contact, Aryantra support, AI automation consultation, Aryantra demo request, business automation inquiry, AI implementation help, Aryantra sales, contact AI company, Aryantra pricing, AI consultation services, hire AI automation experts, Aryantra Hyderabad, Aryantra.co contact, business AI solutions contact, enterprise AI consultation, Aryantra phone number, AI voice agent demo, chatbot implementation, AI automation quote, schedule AI consultation, Aryantra business inquiries" />
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content="Contact Aryantra - AI Automation Consultation" />
         <meta property="og:description" content="Contact Aryantra for AI automation solutions, business consultation, and support. Let's automate your pain into profit." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://aryantra.com/contact" />
-        <meta property="og:image" content="/vite.svg" />
+        <meta property="og:url" content="https://aryantra.co/contact" />
+        <meta property="og:image" content="/logo/ARYANTRA.svg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Contact Aryantra - AI Automation Consultation" />
         <meta name="twitter:description" content="Contact Aryantra for AI automation solutions, business consultation, and support. Let's automate your pain into profit." />
-        <meta name="twitter:image" content="/vite.svg" />
-        <link rel="canonical" href="https://aryantra.com/contact" />
+        <meta name="twitter:image" content="/logo/ARYANTRA.svg" />
+        <link rel="canonical" href="https://aryantra.co/contact" />
       </Helmet>
       <motion.div
         initial={{ opacity: 0 }}

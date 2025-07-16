@@ -82,20 +82,50 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Aryantra - Seamless AI, Scalable Growth</title>
-        <meta name="description" content="Powering modern businesses with friction-free, enterprise-grade AI solutions that deliver measurable growth. Automate Pain into Profit with Aryantra." />
-        <meta name="keywords" content="AI, Automation, Business, Growth, Chatbots, Voice Agents, Content Automation, Aryantra" />
+        <title>Aryantra | AI Automation Services for Business Growth</title>
+        <meta name="description" content="Aryantra delivers enterprise-grade AI voice agents, chatbots, and automation solutions that transform business operations and drive measurable growth. Automate pain into profit." />
+        <meta name="keywords" content="Aryantra, AryantraAI, Aryantra automation, Aryantra.co, AI automation, AI services, AI voice agents, AI business automation, enterprise AI, B2B automation, business automation tools, Aryantra AI solutions, AI chatbot service, automation software, AI lead qualification, voice AI technology, conversational AI, content automation platform, AI assistant for business, AI sales automation, Aryantra Hyderabad, best AI automation company, AI business solutions, automated customer service AI, AI-powered business tools" />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="Aryantra - Seamless AI, Scalable Growth" />
-        <meta property="og:description" content="Powering modern businesses with friction-free, enterprise-grade AI solutions that deliver measurable growth." />
+        <meta property="og:title" content="Aryantra | AI Automation Services for Business Growth" />
+        <meta property="og:description" content="Aryantra delivers enterprise-grade AI voice agents, chatbots, and automation solutions that transform business operations and drive measurable growth." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://aryantra.com/" />
-        <meta property="og:image" content="/vite.svg" />
+        <meta property="og:url" content="https://aryantra.co/" />
+        <meta property="og:image" content="/logo/ARYANTRA.svg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Aryantra - Seamless AI, Scalable Growth" />
-        <meta name="twitter:description" content="Powering modern businesses with friction-free, enterprise-grade AI solutions that deliver measurable growth." />
-        <meta name="twitter:image" content="/vite.svg" />
-        <link rel="canonical" href="https://aryantra.com/" />
+        <meta name="twitter:title" content="Aryantra | AI Automation Services for Business Growth" />
+        <meta name="twitter:description" content="Enterprise-grade AI voice agents, chatbots, and automation solutions that transform business operations and drive measurable growth." />
+        <meta name="twitter:image" content="/logo/ARYANTRA.svg" />
+        <link rel="canonical" href="https://aryantra.co/" />
+        
+        {/* Structured data for better SEO */}
+        <script type="application/ld+json">
+        {`
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Aryantra",
+            "url": "https://aryantra.co/",
+            "logo": "https://aryantra.co/logo/ARYANTRA.svg",
+            "description": "AI automation services for business growth including AI voice agents, chatbots, and content automation solutions",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Hyderabad",
+              "addressRegion": "Telangana",
+              "addressCountry": "IN"
+            },
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+91-9391100788",
+              "contactType": "customer service",
+              "email": "aryantra.ai@gmail.com"
+            },
+            "sameAs": [
+              "https://www.linkedin.com/company/aryantra-ai/"
+            ],
+            "knowsAbout": ["AI Automation", "AI Voice Agents", "AI Chatbots", "Content Automation", "Lead Qualification"]
+          }
+        `}
+        </script>
       </Helmet>
       <motion.div
         initial={{ opacity: 0 }}
@@ -185,9 +215,9 @@ const Home = () => {
                 transition={{ delay: 0.6, duration: 0.8 }}
                 className="space-y-4"
               >
-                <p className="text-2xl md:text-3xl font-bold text-indigo-600">
+                <h2 className="text-2xl md:text-3xl font-bold text-indigo-600">
                   Automate Pain into Profit
-                </p>
+                </h2>
                 <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed font-medium">
                   Powering modern businesses with friction-free, enterprise-grade AI solutions that deliver measurable growth.
                 </p>

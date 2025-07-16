@@ -49,18 +49,18 @@ const About = () => {
       <Helmet>
         <title>About Aryantra - Our Story, Mission & Vision</title>
         <meta name="description" content="Learn about Aryantra's mission, vision, and story. Discover how we drive frictionless transformation through scalable AI automation." />
-        <meta name="keywords" content="About Aryantra, AI Company, Mission, Vision, Story, Automation, Team" />
+        <meta name="keywords" content="About Aryantra, AryantraAI, Aryantra team, AI automation company, Aryantra history, Aryantra founding story, AI service provider, Aryantra values, Aryantra mission, AI business transformation, Hyderabad AI company, enterprise AI solutions, Aryantra leadership, innovative AI company, AI automation experts, Aryantra.co about, AI technology vision, business process automation, intelligent automation solutions, B2B AI services, Aryantra founders" />
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content="About Aryantra - Our Story, Mission & Vision" />
         <meta property="og:description" content="Learn about Aryantra's mission, vision, and story. Discover how we drive frictionless transformation through scalable AI automation." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://aryantra.com/about" />
-        <meta property="og:image" content="/vite.svg" />
+        <meta property="og:url" content="https://aryantra.co/about" />
+        <meta property="og:image" content="/logo/ARYANTRA.svg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="About Aryantra - Our Story, Mission & Vision" />
         <meta name="twitter:description" content="Learn about Aryantra's mission, vision, and story. Discover how we drive frictionless transformation through scalable AI automation." />
-        <meta name="twitter:image" content="/vite.svg" />
-        <link rel="canonical" href="https://aryantra.com/about" />
+        <meta name="twitter:image" content="/logo/ARYANTRA.svg" />
+        <link rel="canonical" href="https://aryantra.co/about" />
       </Helmet>
       <motion.div
         initial={{ opacity: 0 }}
