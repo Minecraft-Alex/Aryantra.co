@@ -398,7 +398,7 @@ const Home = () => {
                   viewport={{ once: true }}
                   transition={{ delay: 0.4, duration: 0.8 }}
                 >
-                  Join hundreds of businesses that have automated their pain into profit with our AI solutions.
+                  You don't need hundreds. You just need results. And that's what Aryantra delivers.
                 </motion.p>
                 
                 <motion.div
