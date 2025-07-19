@@ -455,7 +455,7 @@ const Contact = () => {
                   Ready to Transform Your Business?
                 </h2>
                 <p className="text-lg sm:text-xl text-blue-100 max-w-3xl mx-auto">
-                  Join hundreds of businesses that have already automated their operations with our AI solutions.
+                  Grow faster with smarter automation.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center">
                   <motion.button 

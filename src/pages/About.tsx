@@ -302,44 +302,6 @@ const About = () => {
             </div>
           </section>
         </ParallaxSection>
-
-        {/* Team Section */}
-        <ParallaxSection speed={0.3}>
-          <section className="py-16 sm:py-20 lg:py-32 bg-gradient-to-r from-indigo-600 via-purple-600 to-blue-600 relative overflow-hidden">
-            {/* Animated background elements */}
-            <motion.div
-              className="absolute inset-0 opacity-10"
-              animate={{ rotate: 360 }}
-              transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
-            >
-              <div className="absolute top-1/4 left-1/4 w-16 sm:w-32 h-16 sm:h-32 border border-white rounded-full" />
-              <div className="absolute top-3/4 right-1/4 w-24 sm:w-48 h-24 sm:h-48 border border-white rounded-full" />
-              <div className="absolute top-1/2 left-3/4 w-12 sm:w-24 h-12 sm:h-24 border border-white rounded-full" />
-            </motion.div>
-
-            <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-              <motion.div
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8 }}
-                className="space-y-6 sm:space-y-8"
-              >
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white">
-                  Meet Our Team
-                </h2>
-                <p className="text-lg sm:text-xl text-blue-100 max-w-3xl mx-auto">
-                  Our diverse team of AI specialists, engineers, and business strategists work together to deliver exceptional results for our clients.
-                </p>
-                <div className="bg-white/10 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-6 sm:p-8 text-blue-100">
-                  <p className="text-base sm:text-lg">
-                    Detailed team profiles coming soon. Stay tuned to learn more about the innovative minds behind Aryantra's success.
-                  </p>
-                </div>
-              </motion.div>
-            </div>
-          </section>
-        </ParallaxSection>
       </motion.div>
     </>
   );
